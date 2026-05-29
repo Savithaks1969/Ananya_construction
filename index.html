@@ -5,28 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Professional civil work and construction services. Showcasing quality interior design, exterior construction, and commercial projects.">
+        content="Professional civil work and construction services by Ananya Construction, including interiors, residential projects, commercial work, and architectural planning.">
     <meta name="keywords" content="civil work, construction, interior design, architecture, building contractor">
-    <title>Ananya Construction - Professional Construction & Interior Design</title>
+    <title>Ananya Construction - Civil Work, Interiors & Planning</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@700;800&display=swap"
         rel="stylesheet">
 
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="logo">Ananya Construction</div>
+            <a class="brand" href="#home" aria-label="Ananya Construction home">
+                <img src="logo.jpg" alt="" class="brand-mark">
+                <span>Ananya Construction</span>
+            </a>
+
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -34,118 +34,182 @@
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
+
+            <a href="tel:+919449473481" class="nav-call">
+                <i class="fa-solid fa-phone"></i>
+                <span>Call Now</span>
+            </a>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation menu">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-background">
-            <img src="logo.jpg" alt="Ananya Plans Logo">
+            <img src="img/2.png" alt="Completed residential construction project">
         </div>
         <div class="hero-overlay"></div>
+
         <div class="hero-content container">
-            <h1 class="hero-title">Building Dreams Into Reality</h1>
-            <p class="hero-subtitle">Professional Civil Work, Interior Design & Construction Excellence</p>
-            <div class="cta-buttons">
-                <a href="#portfolio" class="btn btn-primary">View Our Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            <div class="hero-copy">
+                <p class="eyebrow">Civil work, interiors and architectural planning</p>
+                <h1 class="hero-title">Ananya Construction & Interiors</h1>
+                <p class="hero-subtitle">
+                    Thoughtful planning, reliable execution, and elegant spaces for homes, commercial projects, and
+                    landmark builds.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <i class="fa-solid fa-image"></i>
+                        View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Get In Touch
+                    </a>
+                </div>
             </div>
+
+            <div class="hero-panel" aria-label="Project highlights">
+                <div>
+                    <strong>150+</strong>
+                    <span>Completed projects</span>
+                </div>
+                <div>
+                    <strong>10+</strong>
+                    <span>Years experience</span>
+                </div>
+                <div>
+                    <strong>100%</strong>
+                    <span>Client focus</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-service-strip container" aria-label="Core services">
+            <span><i class="fa-solid fa-helmet-safety"></i> Civil Construction</span>
+            <span><i class="fa-solid fa-couch"></i> Interior Design</span>
+            <span><i class="fa-solid fa-building"></i> Commercial Projects</span>
+            <span><i class="fa-solid fa-house-chimney"></i> Residential Projects</span>
         </div>
     </section>
 
-    <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">About Us</h2>
-                <p class="section-subtitle">Transforming spaces with precision, creativity, and excellence</p>
+                <p class="section-kicker">About Us</p>
+                <h2 class="section-title">Built on engineering detail and design sense</h2>
+                <p class="section-subtitle">Transforming spaces with precision, creativity, and excellence.</p>
             </div>
+
             <div class="about-content">
                 <div class="about-text fade-in">
-                    <h3>Your Trusted Construction Partner</h3>
+                    <h3>Your trusted construction partner</h3>
                     <p>
                         With years of experience in civil engineering and construction, we specialize in delivering
                         high-quality projects that exceed expectations. From residential interiors to commercial
                         buildings, our team brings expertise, innovation, and dedication to every project.
                     </p>
                     <p>
-                        Led by our experienced team of professionals, <strong>Er. Savitha K.S</strong> (Civil Engineer)
-                        and <strong>Er. Abhishek Athreya</strong> (Structure Engineer & Interior Designer), we bring
-                        global standards to local projects.
+                        Led by <strong>Er. Savitha K.S</strong> and <strong>Er. Abhishek Athreya</strong>, we combine
+                        structural knowledge with interior design thinking to create practical, refined spaces.
                     </p>
-                    <p>
-                        We pride ourselves on attention to detail, timely delivery, and creating spaces that
-                        inspire. Whether it's a modern interior makeover or a complete construction project,
-                        we're committed to bringing your vision to life.
-                    </p>
+                    <div class="expert-list">
+                        <span><i class="fa-solid fa-user-tie"></i> Civil engineering guidance</span>
+                        <span><i class="fa-solid fa-ruler-combined"></i> Structure and planning support</span>
+                        <span><i class="fa-solid fa-layer-group"></i> Interior and exterior execution</span>
+                    </div>
                 </div>
-                <div class="about-stats fade-in">
-                    <div class="stat-card">
-                        <div class="stat-number">150+</div>
-                        <div class="stat-label">Projects Completed</div>
+
+                <div class="about-visual fade-in">
+                    <img src="img/4.png" alt="Construction foundation and pillar work">
+                    <div class="about-badge">
+                        <span>From plan to finish</span>
+                        <strong>Reliable site execution</strong>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-number">10+</div>
-                        <div class="stat-label">Years Experience</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Client Satisfaction</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">50+</div>
-                        <div class="stat-label">Expert Team</div>
-                    </div>
+                </div>
+            </div>
+
+            <div class="about-stats fade-in">
+                <div class="stat-card">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Expert Team</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
     <section class="services" id="services">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-subtitle">Comprehensive solutions for all your construction needs</p>
+                <p class="section-kicker">Services</p>
+                <h2 class="section-title">Complete construction solutions</h2>
+                <p class="section-subtitle">Planning, design, execution, and finishing support for every project type.</p>
             </div>
+
             <div class="services-grid">
-                <div class="service-card fade-in">
+                <article class="service-card fade-in">
+                    <i class="fa-solid fa-helmet-safety"></i>
                     <h3>Civil Construction</h3>
-                </div>
-                <div class="service-card fade-in">
+                    <p>Reliable structural work for new builds, additions, and site development.</p>
+                </article>
+                <article class="service-card fade-in">
+                    <i class="fa-solid fa-couch"></i>
                     <h3>Interior Designing</h3>
-                </div>
-                <div class="service-card fade-in">
+                    <p>Functional, elegant interior planning for modern residential and commercial spaces.</p>
+                </article>
+                <article class="service-card fade-in">
+                    <i class="fa-solid fa-tree-city"></i>
                     <h3>Outdoor Planning</h3>
-                </div>
-                <div class="service-card fade-in">
+                    <p>Exterior areas, outdoor living zones, landscaping concepts, and entry experiences.</p>
+                </article>
+                <article class="service-card fade-in">
+                    <i class="fa-solid fa-building"></i>
                     <h3>Commercial Projects</h3>
-                </div>
-                <div class="service-card fade-in">
+                    <p>Practical construction support for offices, shops, workspaces, and business buildings.</p>
+                </article>
+                <article class="service-card fade-in">
+                    <i class="fa-solid fa-gopuram"></i>
                     <h3>Temple Construction</h3>
-                </div>
-                <div class="service-card fade-in">
+                    <p>Traditional project execution with careful detailing, proportion, and craftsmanship.</p>
+                </article>
+                <article class="service-card fade-in">
+                    <i class="fa-solid fa-house-chimney"></i>
                     <h3>Residential Projects</h3>
-                </div>
-                <div class="service-card fade-in">
+                    <p>Homes, villas, renovations, and complete residential construction support.</p>
+                </article>
+                <article class="service-card fade-in">
+                    <i class="fa-solid fa-drafting-compass"></i>
                     <h3>Architectural Planning</h3>
-                </div>
+                    <p>Smart layouts and planning guidance before the first brick is placed.</p>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
     <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Our Portfolio</h2>
-                <p class="section-subtitle">Explore our completed projects and see quality in action</p>
+                <p class="section-kicker">Portfolio</p>
+                <h2 class="section-title">Quality you can see</h2>
+                <p class="section-subtitle">Explore completed projects across interiors, exteriors, residential, and commercial work.</p>
             </div>
 
-            <div class="portfolio-filters">
+            <div class="portfolio-filters" aria-label="Portfolio filters">
                 <button class="filter-btn active" data-filter="all">All Projects</button>
                 <button class="filter-btn" data-filter="interior">Interior</button>
                 <button class="filter-btn" data-filter="exterior">Exterior</button>
@@ -154,107 +218,114 @@
             </div>
 
             <div class="portfolio-grid">
-                <div class="portfolio-item fade-in" data-category="interior residential">
-                    <img src="img/1.png" alt="Modern Living Room Interior">
+                <article class="portfolio-item fade-in" data-category="interior residential">
+                    <img src="img/1.png" alt="Modern living room interior project">
                     <div class="portfolio-overlay">
+                        <span class="portfolio-category">Interior &middot; Residential</span>
                         <h3>Modern Living Space</h3>
-                        <p>Contemporary interior design with elegant finishes</p>
-                        <span class="portfolio-category">Interior • Residential</span>
+                        <p>Contemporary interior design with elegant finishes.</p>
                     </div>
-                </div>
+                </article>
 
-                <div class="portfolio-item fade-in" data-category="exterior residential">
-                    <img src="img/2.png" alt="Villa Exterior Design">
+                <article class="portfolio-item fade-in featured" data-category="exterior residential">
+                    <img src="img/2.png" alt="Luxury villa exterior design">
                     <div class="portfolio-overlay">
+                        <span class="portfolio-category">Exterior &middot; Residential</span>
                         <h3>Luxury Villa</h3>
-                        <p>Modern architectural design with landscaping</p>
-                        <span class="portfolio-category">Exterior • Residential</span>
+                        <p>Modern architectural design with a refined exterior presence.</p>
                     </div>
-                </div>
+                </article>
 
-                <div class="portfolio-item fade-in" data-category="exterior commercial">
-                    <img src="img/3.png" alt="Commercial Building">
+                <article class="portfolio-item fade-in" data-category="exterior commercial">
+                    <img src="img/3.png" alt="Commercial building construction project">
                     <div class="portfolio-overlay">
+                        <span class="portfolio-category">Commercial &middot; Exterior</span>
                         <h3>Corporate Office</h3>
-                        <p>Contemporary commercial building construction</p>
-                        <span class="portfolio-category">Commercial • Exterior</span>
+                        <p>Contemporary commercial building construction.</p>
                     </div>
-                </div>
+                </article>
 
-                <div class="portfolio-item fade-in" data-category="exterior residential">
-                    <img src="img/4.png" alt="Basement Construction">
+                <article class="portfolio-item fade-in" data-category="exterior residential">
+                    <img src="img/4.png" alt="Basement and pillar construction work">
                     <div class="portfolio-overlay">
+                        <span class="portfolio-category">Construction &middot; Residential</span>
                         <h3>Basement Construction</h3>
-                        <p>Foundation and pillar construction work</p>
-                        <span class="portfolio-category">Construction • Residential</span>
+                        <p>Foundation and pillar construction work.</p>
                     </div>
-                </div>
+                </article>
 
-                <div class="portfolio-item fade-in" data-category="exterior residential">
-                    <img src="img/5.png" alt="Outdoor Landscape">
+                <article class="portfolio-item fade-in" data-category="exterior residential">
+                    <img src="img/5.png" alt="Outdoor landscape and patio design">
                     <div class="portfolio-overlay">
+                        <span class="portfolio-category">Exterior &middot; Residential</span>
                         <h3>Outdoor Living</h3>
-                        <p>Beautiful landscape and patio design</p>
-                        <span class="portfolio-category">Exterior • Residential</span>
+                        <p>Landscape and patio planning for a better outdoor experience.</p>
                     </div>
-                </div>
+                </article>
 
-                <div class="portfolio-item fade-in" data-category="exterior commercial">
-                    <img src="img/6.png" alt="Construction Project">
+                <article class="portfolio-item fade-in" data-category="exterior commercial">
+                    <img src="img/6.png" alt="Large scale construction site project">
                     <div class="portfolio-overlay">
+                        <span class="portfolio-category">Commercial &middot; Construction</span>
                         <h3>Construction Site</h3>
-                        <p>Large-scale commercial construction project</p>
-                        <span class="portfolio-category">Commercial • Construction</span>
+                        <p>Large-scale construction project execution.</p>
                     </div>
-                </div>
+                </article>
 
-                <div class="portfolio-item fade-in" data-category="exterior commercial">
-                    <img src="img/7.png" alt="Temple Construction Project">
+                <article class="portfolio-item fade-in" data-category="exterior commercial">
+                    <img src="img/7.png" alt="Temple construction project">
                     <div class="portfolio-overlay">
+                        <span class="portfolio-category">Temple &middot; Construction</span>
                         <h3>Grand Temple Project</h3>
-                        <p>Traditional temple construction with intricate stonework</p>
-                        <span class="portfolio-category">Temple • Construction</span>
+                        <p>Traditional construction with detailed stonework.</p>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section class="contact-section" id="contact">
         <div class="container">
             <div class="contact-container">
                 <div class="contact-intro">
-                    <h2 class="section-title">Get In Touch</h2>
-
+                    <p class="section-kicker">Contact</p>
+                    <h2 class="section-title">Start your next project</h2>
+                    <p class="section-subtitle">Reach the team directly for site visits, planning, construction, and interiors.</p>
                 </div>
 
                 <div class="contact-methods">
-
-
                     <div class="contact-card fade-in">
-                        <div class="contact-icon"></div>
+                        <div class="contact-icon"><i class="fa-solid fa-users"></i></div>
                         <h3>Our Experts</h3>
                         <p>Er. Savitha K.S<br>Er. Abhishek Athreya</p>
                     </div>
 
                     <div class="contact-card fade-in">
-                        <div class="contact-icon">📞</div>
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
                         <h3>Phone</h3>
-                        <a href="tel:+919449473481">+91 94494 73481</a><br>
+                        <a href="tel:+919449473481">+91 94494 73481</a>
                         <a href="tel:+919482848103">+91 94828 48103</a>
                     </div>
 
                     <div class="contact-card fade-in">
-                        <div class="contact-icon">✉️</div>
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
                         <h3>Email</h3>
                         <a href="mailto:ananyaarchitects11@gmail.com">ananyaarchitects11@gmail.com</a>
                     </div>
-
                 </div>
 
-                <!-- Google Maps Section -->
-                <div class="map-container fade-in" style="margin-top: 3rem;">
+                <div class="contact-actions fade-in">
+                    <a href="tel:+919449473481" class="btn btn-primary">
+                        <i class="fa-solid fa-phone"></i>
+                        Call Ananya Construction
+                    </a>
+                    <a href="mailto:ananyaarchitects11@gmail.com" class="btn btn-secondary">
+                        <i class="fa-solid fa-envelope"></i>
+                        Send Email
+                    </a>
+                </div>
+
+                <div class="map-container fade-in">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.8!2d76.8959!3d12.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bafa159ac84c9ad%3A0x1a2e04ec6ba8effe!2sShashi%20Traders%20Complex%2C%20V.V%20Road%2C%20Mandya!5e0!3m2!1sen!2sin!4v1234567890"
                         width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
@@ -262,33 +333,31 @@
                     </iframe>
                 </div>
 
-                <div class="section-header" style="margin-top: 3rem;">
+                <div class="follow-block">
                     <h3>Follow Us</h3>
-                    <p class="section-subtitle">Stay connected and see our latest projects</p>
-                </div>
-
-                <div class="social-links">
-                    <a href="https://www.instagram.com/ananyaconstructions11/" target="_blank" class="social-link"
-                        title="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.facebook.com/abhishek.athreya.3/" target="_blank" class="social-link"
-                        title="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
+                    <p>Stay connected and see our latest projects.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/ananyaconstructions11/" target="_blank" class="social-link"
+                            title="Instagram" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/abhishek.athreya.3/" target="_blank" class="social-link"
+                            title="Facebook" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">Ananya Construction</div>
                 <p class="footer-text">Building excellence, one project at a time.</p>
                 <div class="footer-bottom">
-                    <p>&copy; 2025 Ananya Construction. All rights reserved.</p>
+                    <p>&copy; 2026 Ananya Construction. All rights reserved.</p>
                 </div>
             </div>
         </div>
