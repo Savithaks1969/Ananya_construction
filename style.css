@@ -162,6 +162,44 @@ p {
     color: var(--ink);
     font-size: 1.25rem;
     cursor: pointer;
+    position: relative;
+}
+
+.mobile-menu-btn i {
+    display: none;
+}
+
+.mobile-menu-btn::before,
+.mobile-menu-btn::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 18px;
+    height: 2px;
+    border-radius: 999px;
+    background: currentColor;
+    transform: translateX(-50%);
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.mobile-menu-btn::before {
+    top: 16px;
+    box-shadow: 0 6px 0 currentColor;
+}
+
+.mobile-menu-btn::after {
+    top: 28px;
+}
+
+.mobile-menu-btn.menu-open::before {
+    top: 21px;
+    transform: translateX(-50%) rotate(45deg);
+    box-shadow: none;
+}
+
+.mobile-menu-btn.menu-open::after {
+    top: 21px;
+    transform: translateX(-50%) rotate(-45deg);
 }
 
 .hero {
@@ -864,6 +902,21 @@ section {
         width: min(100% - 28px, 1180px);
     }
 
+    .nav-container {
+        min-height: 72px;
+    }
+
+    .brand {
+        gap: 0.6rem;
+        font-size: 0.98rem;
+    }
+
+    .brand-mark {
+        width: 42px;
+        height: 42px;
+        flex: 0 0 auto;
+    }
+
     .nav-links {
         position: fixed;
         top: 76px;
@@ -904,36 +957,97 @@ section {
         justify-content: center;
     }
 
+    .nav-call {
+        display: inline-flex;
+        min-height: 42px;
+        padding: 0 0.75rem;
+        font-size: 0.88rem;
+        white-space: nowrap;
+    }
+
+    .nav-call span {
+        font-size: 0;
+    }
+
+    .nav-call span::after {
+        content: 'Call';
+        font-size: 0.88rem;
+    }
+
     .hero {
         min-height: auto;
-        padding: 7.5rem 0 3rem;
+        padding: 6.6rem 0 2.5rem;
     }
 
     .hero-title {
-        font-size: clamp(2.55rem, 11vw, 3.4rem);
+        font-size: clamp(2.35rem, 10.2vw, 3rem);
         line-height: 1.08;
     }
 
+    .hero-subtitle {
+        margin: 1rem 0 1.55rem;
+        font-size: 1rem;
+    }
+
+    .hero-content {
+        gap: 1.4rem;
+    }
+
     .hero-panel {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .hero-service-strip {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 1.3rem;
     }
 
     .hero-service-strip span {
         justify-content: flex-start;
         border-right: 0;
         border-bottom: 1px solid var(--line);
+        min-height: 58px;
+        padding: 0.75rem;
+        font-size: 0.86rem;
+        line-height: 1.25;
+    }
+
+    .hero-service-strip span:nth-child(odd) {
+        border-right: 1px solid var(--line);
+    }
+
+    .hero-service-strip span:nth-child(3) {
+        border-bottom: 0;
     }
 
     .hero-service-strip span:last-child {
         border-bottom: 0;
     }
 
+    .hero-panel div {
+        padding: 0.85rem 0.7rem;
+    }
+
+    .hero-panel strong {
+        font-size: 1.55rem;
+    }
+
+    .hero-panel span {
+        display: block;
+        font-size: 0.75rem;
+        line-height: 1.25;
+    }
+
     section {
-        padding: 4.5rem 0;
+        padding: 3.8rem 0;
+    }
+
+    .section-header {
+        margin-bottom: 2rem;
+    }
+
+    .section-title {
+        font-size: clamp(1.9rem, 9vw, 2.5rem);
     }
 
     .services-grid,
@@ -943,7 +1057,25 @@ section {
     }
 
     .portfolio-grid {
-        grid-auto-rows: 340px;
+        grid-auto-rows: 300px;
+    }
+
+    .service-card,
+    .contact-card {
+        min-height: auto;
+        padding: 1.2rem;
+    }
+
+    .portfolio-overlay {
+        padding: 1rem;
+    }
+
+    .portfolio-overlay h3 {
+        font-size: 1.25rem;
+    }
+
+    .portfolio-overlay p {
+        font-size: 0.92rem;
     }
 
     .contact-actions .btn,
@@ -954,13 +1086,50 @@ section {
     .map-container iframe {
         height: 310px;
     }
+
+    .about-visual {
+        min-height: 360px;
+    }
+
+    .about-visual img {
+        min-height: 360px;
+        object-position: 78% center;
+    }
 }
 
 @media (max-width: 480px) {
+    .nav-container {
+        gap: 0.55rem;
+    }
+
+    .brand {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
     .brand span {
-        max-width: 190px;
+        max-width: 148px;
         white-space: normal;
         line-height: 1.05;
+    }
+
+    .nav-call {
+        flex: 0 0 auto;
+        padding: 0 0.65rem;
+    }
+
+    .hero-title {
+        font-size: clamp(2.15rem, 10vw, 2.65rem);
+    }
+
+    .eyebrow,
+    .section-kicker {
+        font-size: 0.76rem;
+        line-height: 1.45;
+    }
+
+    .hero-panel {
+        border-radius: var(--radius-md);
     }
 
     .about-stats {
@@ -968,6 +1137,6 @@ section {
     }
 
     .portfolio-grid {
-        grid-auto-rows: 300px;
+        grid-auto-rows: 280px;
     }
 }

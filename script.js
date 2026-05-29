@@ -7,6 +7,7 @@ mobileMenuBtn.addEventListener('click', () => {
 
     icon.classList.toggle('fa-bars', !isOpen);
     icon.classList.toggle('fa-times', isOpen);
+    mobileMenuBtn.classList.toggle('menu-open', isOpen);
     mobileMenuBtn.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
 });
 
@@ -17,6 +18,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 
         icon.classList.add('fa-bars');
         icon.classList.remove('fa-times');
+        mobileMenuBtn.classList.remove('menu-open');
         mobileMenuBtn.setAttribute('aria-label', 'Open navigation menu');
     });
 });
