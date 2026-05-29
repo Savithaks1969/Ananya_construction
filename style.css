@@ -381,6 +381,11 @@ section {
     color: var(--ink);
 }
 
+.inline-qualification {
+    color: var(--green);
+    font-weight: 700;
+}
+
 .expert-list {
     display: grid;
     gap: 0.7rem;
@@ -684,6 +689,14 @@ section {
     color: rgba(255, 255, 255, 0.76);
     word-break: break-word;
     overflow-wrap: break-word;
+}
+
+.qualification {
+    display: inline-block;
+    margin-top: 0.35rem;
+    color: var(--gold);
+    font-size: 0.92rem;
+    font-weight: 800;
 }
 
 .contact-card a {
